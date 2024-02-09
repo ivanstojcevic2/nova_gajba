@@ -1,0 +1,973 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+}
+
+#main-navbar {
+  width: 100%;
+}
+
+nav {
+  border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav a:hover,
+nav a:active {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 2%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 600px;
+}
+
+li {
+  padding-right: 0%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.naruci {
+  width: 180%;
+  height: 120%;
+  border: none;
+  background-color: #000000;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item button {
+    width: 100%;
+  }
+}
+
+li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: rgb(176, 141, 89);
+  bottom: 0;
+  left: 0;
+  transition: width 1s ease;
+}
+
+li a:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  li a:hover::before {
+    width: 15%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  width: 5%;
+}
+
+.naslovnica {
+  width: 100%;
+  margin-top: 4%;
+}
+
+.naslovna_slika {
+  width: 100%;
+  height: auto;
+}
+
+.opcenito {
+  width: 100%;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.opcenito h1 {
+  color: rgb(176, 141, 89);
+  font-size: 5em;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.opcenito p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tekst {
+  width: 30%;
+  margin-left: 30%;
+  height: 80%;
+  padding-bottom: 20%;
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: rgb(240, 229, 216);
+  text-align: center;
+}
+
+.tekst h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.tekst p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #121212;
+  width: 90%;
+  margin-left: 20px;
+}
+
+.plata {
+  height: auto;
+  margin-top: -20%;
+  width: 20%;
+  z-index: 1000;
+}
+
+.juha {
+  width: 30%;
+  height: auto;
+  margin-top: -18%;
+  margin-left: -3%;
+  z-index: 10;
+  padding: 2%;
+  background-color: white;
+}
+
+.vrijeme {
+  margin-top: 13%;
+  width: 80%;
+  margin-left: 20%;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+}
+
+.vrijeme img {
+  width: 80%;
+  height: auto;
+}
+
+.informacije {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  height: 80%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-left: -15%;
+  background-color: rgb(240, 229, 216);
+  font-size: 100%;
+}
+
+.informacije h1 {
+  font-size: 120%;
+}
+
+.informacije h3 {
+  font-size: 120%;
+}
+
+.informacije p {
+  font-size: 80%;
+}
+
+.dan {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dan p {
+  padding-top: 6px;
+  margin-left: 10px;
+}
+
+.dogadaji {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(240, 229, 216);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.prostor {
+  width: 27%;
+  margin-left: -20%;
+  margin-top: -25%;
+  z-index: 999;
+  position: relative;
+}
+
+.daska {
+  height: 58%;
+  margin-top: 30%;
+  margin-left: -15%;
+  width: 26.8%;
+  z-index: 1000;
+  position: relative;
+  padding: 15px;
+  background-color: white;
+}
+
+.ketering {
+  width: 24.5%;
+  height: 60%;
+  margin-left: -51.5%;
+  margin-top: 20%;
+  padding: 0px;
+  background-color: white;
+  z-index: 1000;
+  position: relative;
+}
+
+.content2 {
+  width: 100%;
+  text-align: center;
+}
+
+.dogadaji h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.dogadaji p {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.dojmovi {
+  width: 100%;
+  padding: 2% 0;
+  margin-top: 4%;
+  text-align: center;
+}
+
+.dojmovi h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.slideshow-container2 {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.mySlides2 {
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 2% 0 5%;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.mySlides2 h4 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.mySlides2 p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.5;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #383838;
+}
+
+.karta {
+  margin-top: 10%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.over {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 20%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 15%;
+  margin-top: -20%;
+  position: relative;
+  z-index: 1000;
+  height: 330px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.5);
+}
+
+.over button {
+  height: 25%;
+  width: 100%;
+  border: 0;
+  background-color: #121212;
+  color: white;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(176, 141, 89);
+}
+
+.manu_naslov {
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 7%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(176, 141, 89);
+}
+
+.menu {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 3%;
+}
+
+.menu h1 {
+  padding-top: 5%;
+}
+
+.book {
+  position: relative;
+  width: 550px;
+  height: 750px;
+  transition: transform 0.5s;
+  color: rgb(176, 141, 89);
+}
+
+.book table {
+  width: 100%;
+}
+
+.book td {
+  border-bottom: 1px dashed rgb(176, 141, 89);
+  padding-top: 3%;
+}
+
+.paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front,
+.back {
+  /* background-color: rgb(196, 196, 196); */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+  outline: 2px dashed rgb(176, 141, 89);
+  outline-offset: -15px;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+  border-left: 3px solid rgb(176, 141, 89);
+  background-image: url(./img/menu-page-front.png);
+}
+
+.back {
+  z-index: 0;
+  background-image: url(./img/menu-page-front.png);
+}
+
+.menu h3 {
+  text-decoration: underline;
+  margin-right: 9%;
+  color: black;
+}
+
+.strelice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.strelice button {
+  border: 0;
+  background-color: rgb(0, 0, 0, 0);
+  margin-top: 20px;
+}
+
+.front-content {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  justify-content: left;
+  padding: 5%;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+.back-content {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  justify-content: left;
+  padding: 5%;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+
+.back-content {
+  transform: rotateY(180deg);
+}
+
+.flipped .front,
+.flipped .back {
+  transform: rotateY(-180deg);
+}
+
+.menu button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 130px;
+  transition: transform 0.5s;
+}
+
+.menu button:focus {
+  outline: none;
+}
+
+.menu button:hover i {
+  color: #636363;
+}
+
+@media screen and (max-width: 1090px) {
+  .back {
+    height: 750px;
+    width: 80%;
+    font-size: 14px;
+  }
+  .front {
+    height: 750px;
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .back {
+    height: 730px;
+    font-size: 15px;
+  }
+  .front {
+    height: 730px;
+    font-size: 15px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    margin-bottom: 15px;
+    margin-right: 0px;
+    position: relative;
+  }
+
+  .naruci {
+    width: 100%;
+    height: 50px;
+  }
+
+  .logo {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .back {
+    height: 600px;
+    width: 300px;
+    font-size: 6px;
+  }
+
+  .book {
+    height: 600px;
+    position: relative;
+    left: 15%;
+  }
+
+  .paper {
+    height: 600px;
+  }
+
+  .back-content {
+    font-size: 10px;
+  }
+
+  .back-content h3 {
+    font-size: 10px;
+  }
+  .front {
+    height: 600px;
+    width: 300px;
+    font-size: 10px;
+  }
+
+  .front h3 {
+    font-size: 10px;
+  }
+
+  .menu {
+    height: 600px;
+  }
+}
+
+i {
+  font-size: 50px;
+  color: gray;
+}
+
+#p1 {
+  z-index: 6;
+}
+
+#p2 {
+  z-index: 5;
+}
+
+#p3 {
+  z-index: 4;
+}
+
+#p4 {
+  z-index: 3;
+}
+
+#p5 {
+  z-index: 2;
+}
+
+#p6 {
+  z-index: 1;
+}
+
+#gallery {
+  margin-top: 7%;
+  font-family: "Lato", sans-serif;
+  color: #000000;
+  font-size: 2rem;
+  background-color: black;
+}
+
+#gallery h1 {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 10px;
+  position: relative;
+  color: white;
+  padding-top: 4%;
+}
+
+#gallery h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.footer {
+  margin-top: 3%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  justify-content: space-evenly;
+  font-size: 100%;
+}
+
+.podnaslov {
+  text-align: center;
+}
+
+.footer img {
+  height: 100px;
+}
+
+.naslovi {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accordion-wrapper {
+  display: flex;
+  margin-top: 2%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 20px solid black;
+  border-bottom: 20px solid black;
+}
+
+.accordion-element {
+  background-color: gray;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+.active-accordion-element {
+  border: 1px solid rgb(185, 185, 185);
+  box-shadow: 1px 1px 20px rgba(54, 54, 54, 0.438);
+}
+
+.accordion-element:hover {
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.accordion-element:hover img {
+  transform: scale(1.1);
+}
+
+.accordion-element img {
+  opacity: 0.6;
+  height: auto;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.2s;
+}
+
+.accordion-element img:hover,
+.active-accordion-element img {
+  opacity: 1;
+}
+
+.accordion-element:hover,
+.active-accordion-element {
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  #navbar-logo {
+    height: 33px !important;
+  }
+
+  .accordion-wrapper {
+    margin-left: 10%;
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .accordion-element {
+    height: 100px;
+  }
+
+  .accordion-element:hover,
+  .active-accordion-element {
+    height: auto;
+  }
+
+  .accordion-element img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #navbar-logo {
+    height: 50px;
+  }
+
+  .accordion-wrapper {
+    flex-direction: row;
+  }
+
+  .accordion-element {
+    width: 31%;
+    height: 300px;
+  }
+
+  .accordion-element:hover,
+  .active-accordion-element {
+    width: 700px;
+  }
+
+  .accordion-element img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .tekst {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .naslovi {
+    flex-direction: column;
+  }
+
+  .podnaslov {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  .informacije p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .over {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .over button {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .over button {
+    padding-bottom: 2%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content2 {
+    margin-top: 5%;
+  }
+
+  .dogadaji {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .naslovna_slika {
+    margin-top: 10%;
+  }
+  .opcenito p {
+    margin-left: 0;
+  }
+
+  .paper {
+    height: 400px;
+  }
+  .tekst {
+    width: 100%;
+    height: 10%;
+    margin-left: 0;
+  }
+
+  .book {
+    height: 400px;
+  }
+
+  .juha {
+    width: 50%;
+    margin-top: -30%;
+  }
+
+  .plata {
+    width: 50%;
+  }
+
+  .vrijeme {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .vrijeme img {
+    height: 360px;
+    width: 100%;
+  }
+
+  .informacije {
+    margin-left: -33%;
+    height: 430px;
+    width: 230px;
+    font-size: 9px;
+  }
+
+  .informacije h1 {
+    text-align: left;
+    margin-left: 6%;
+  }
+
+  .informacije h3 {
+    font-size: 12px;
+    margin-left: -10%;
+  }
+
+  .informacije p {
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: 51%;
+  }
+
+  .vrijeme {
+    height: 450px;
+  }
+
+  .dogadaji {
+    background-color: rgb(240, 229, 216);
+    text-align: center;
+  }
+
+  .dogadaji p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .kartica {
+    width: 20%;
+    font-size: 80%;
+  }
+
+  .opcenito p {
+    width: 100%;
+  }
+
+  .front {
+    width: 200px;
+    height: 400px;
+    padding: 2%;
+  }
+
+  .back {
+    width: 200px;
+    height: 400px;
+    padding: 2%;
+  }
+
+  .strelice {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu {
+    height: 390px;
+  }
+
+  .footer {
+    width: 250px;
+    margin-left: 17%;
+  }
+}
